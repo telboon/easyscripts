@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ClearExtraLines
+Encoding=UTF-8
+Exec=/usr/bin/clearExtraLines.py
+StartupNotify=false
+Terminal=false
+Type=Application
