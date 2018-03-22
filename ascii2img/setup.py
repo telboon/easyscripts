@@ -3,7 +3,7 @@ setup(name='ascii2img',
     version='1.0',
     scripts=['./src/__main__.py'],
     packages=['PIL'],
-    package_dir={'PIL': 'src'},
+    package_dir={'': 'src'},
     package_data={'PIL': ['*']},
     )
 

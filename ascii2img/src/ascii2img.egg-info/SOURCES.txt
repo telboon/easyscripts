@@ -1,10 +1,5 @@
 setup.py
 ./src/__main__.py
-ascii2img.egg-info/PKG-INFO
-ascii2img.egg-info/SOURCES.txt
-ascii2img.egg-info/dependency_links.txt
-ascii2img.egg-info/top_level.txt
-src/__main__.py
 src/PIL/BdfFontFile.py
 src/PIL/BmpImagePlugin.py
 src/PIL/BufrStubImagePlugin.py
@@ -109,3 +104,7 @@ src/PIL/_webp.cpython-36m-x86_64-linux-gnu.so
 src/PIL/features.py
 src/PIL/version.py
 src/PIL/version.pyc
+src/ascii2img.egg-info/PKG-INFO
+src/ascii2img.egg-info/SOURCES.txt
+src/ascii2img.egg-info/dependency_links.txt
+src/ascii2img.egg-info/top_level.txt

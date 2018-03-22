@@ -14,8 +14,8 @@ def main():
 
     fontfile="/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
     fontSize = 18
-    xMultiplier = fontSize * 0.65
-    yMultiplier = fontSize * 1.15
+    xMultiplier = fontSize * 0.63
+    yMultiplier = fontSize * 1.07
     startX = 10
     startY = 10
 
