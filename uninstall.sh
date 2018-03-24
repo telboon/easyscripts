@@ -9,3 +9,6 @@ sudo rm /usr/bin/clearExtraLines.py
 
 echo "Deleting ascii2img.py..."
 sudo rm /usr/bin/ascii2img
+
+echo "Deleting alliteration-gen..."
+sudo rm /usr/bin/alliteration-gen

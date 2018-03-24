@@ -1,0 +1,8 @@
+[package]
+name = "alliteration-gen"
+version = "0.1.0"
+authors = ["Samuel Pua <kahkin@gmail.com>"]
+
+[dependencies]
+clap = "2.31.2"
+rand = "0.4.2"
