@@ -12,3 +12,6 @@ sudo cp ./ascii2img/ascii2img /usr/bin/
 
 echo "Installing allieration-gen..."
 sudo cp ./alliteration-gen/bin/alliteration-gen /usr/bin
+
+echo "Installing ratio..."
+sudo cp ./ratio/bin/ratio /usr/bin

@@ -12,3 +12,6 @@ sudo rm /usr/bin/ascii2img
 
 echo "Deleting alliteration-gen..."
 sudo rm /usr/bin/alliteration-gen
+
+echo "Deleting ratio"
+sudo rm /usr/bin/ratio
