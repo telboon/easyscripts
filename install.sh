@@ -6,6 +6,7 @@ sudo cp ./urldecode/urldecode.py /usr/bin/
 
 echo "Installing clearExtraLines.py..."
 sudo cp ./clearExtraLines/clearExtraLines.py /usr/bin/
+cp ./clearExtraLines/clearextralines.desktop ~/Desktop/Clear\ Burp\ Lines.desktop
 
 echo "Installing ascii2img..."
 sudo cp ./ascii2img/ascii2img /usr/bin/

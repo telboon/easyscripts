@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Clear Burp Extra Lines
+GenericName=ClearExtraLines
+Comment=Clears Burp Suite's extra line generated due to \r
+Exec=/usr/bin/clearExtraLines.py
+Type=Application
+Encoding=UTF-8
+Terminal=false

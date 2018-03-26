@@ -6,6 +6,7 @@ sudo rm /usr/bin/urldecode.py
 
 echo "Deleting clearExtraLines.py..."
 sudo rm /usr/bin/clearExtraLines.py
+rm ~/Desktop/Clear\ Burp\ Lines.desktop
 
 echo "Deleting ascii2img.py..."
 sudo rm /usr/bin/ascii2img
