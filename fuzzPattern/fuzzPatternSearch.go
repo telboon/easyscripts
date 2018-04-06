@@ -5,6 +5,7 @@ import (
    "gopkg.in/alecthomas/kingpin.v2"
    "encoding/hex"
    "strings"
+   "os"
 )
 
 func main() {
@@ -26,6 +27,7 @@ func main() {
 
    if len(*patternPointer)<4 {
       fmt.Println("Input must have at least 4 bytes")
+      os.Exit(0)
    }
 
    if (*patternPointer)[:2] == "0x" {
@@ -38,6 +40,7 @@ func main() {
 
    if len(fullPattern)<4 {
       fmt.Println("Input must have at least 4 bytes")
+      os.Exit(0)
    }
 
    pattern = fullPattern[:4]
@@ -60,12 +63,12 @@ func main() {
       fmt.Println("Pattern found:",finalPos)
    } else {
       fullCombi = combiMax[0] * combiMax[1] * combiMax[2] * combiMax[3]
-      fmt.Println("Full cycle:", fullCombi)
+      fmt.Println("Full cycle:", fullCombi,"*", len(combiArr), "=", fullCombi*len(combiArr))
       fmt.Println("")
 
       for finalPos < pattLength {
          fmt.Println("Pattern found:",finalPos)
-         finalPos+=fullCombi
+         finalPos+=fullCombi*len(combiArr)
       }
    }
 }
