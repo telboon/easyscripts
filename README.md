@@ -4,30 +4,32 @@ Bunch of scripts that make life easier on command line
 Author: Samuel Pua (kahkin@gmail.com)
 
 ## Current Scripts Available
-- alliteration-gen
-> Creates alliteration in the format of <adjective> <noun>. Mainly used for naming purposes
+* alliteration-gen
+     * Creates alliteration in the format of <adjective> <noun>. Mainly used for naming purposes
   
-- ascii2img
-> Creates image out of an ASCII text file -- may be used to convert ASCII output from Radare2 to image
-> Possible to edit the text file with annotation before saving
+* ascii2img
+     * Creates image out of an ASCII text file -* may be used to convert ASCII output from Radare2 to image
 
-- clearExtraLines
-> Burp Suite creates '\r\n' on its output for it's proxy and repeater. Probably useful for Windows, but not so useful for Linux
-> This creates a problem of 2 lines on Linux
-> Tool converts '\r\n' to '\n' in the clipboard buffer
+     * Possible to edit the text file with annotation before saving
 
-- fuzzPattern
-> Creates pattern to be used for fuzzing
-> The fuzz output must be more than or equal to 4 bytes (32 bit)
+* clearExtraLines
+     * Burp Suite creates '\r\n' on its output for it's proxy and repeater. Probably useful for Windows, but not so useful for Linux
+     * This creates a problem of 2 lines on Linux
+     * Tool converts '\r\n' to '\n' in the clipboard buffer
 
-- ratio
-> Converts a ratio to it's smallest common denominator
+* fuzzPattern
+     * Creates pattern to be used for fuzzing
+     * The fuzz output must be more than or equal to 4 bytes (32 bit)
 
-- urlencode.py
-> Encodes strings into urlencoding
+* ratio
+     * Converts a ratio to it's smallest common denominator
 
-- urldecode.py
-> Decodes url encoding back to ascii
+* urlencode.py
+     * Encodes strings into urlencoding
+
+* urldecode.py
+     * Decodes url encoding back to ascii
+
 
 ## Todos
 - Tab completion
