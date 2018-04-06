@@ -16,3 +16,9 @@ sudo cp ./alliteration-gen/bin/alliteration-gen /usr/bin
 
 echo "Installing ratio..."
 sudo cp ./ratio/bin/ratio /usr/bin
+
+echo "Installing fuzzPatternCreate..."
+sudo cp ./fuzzPattern/fuzzPatternCreate /usr/bin
+
+echo "Installing fuzzPatternSearch..."
+sudo cp ./fuzzPattern/fuzzPatternSearch /usr/bin

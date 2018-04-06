@@ -14,5 +14,11 @@ sudo rm /usr/bin/ascii2img
 echo "Deleting alliteration-gen..."
 sudo rm /usr/bin/alliteration-gen
 
-echo "Deleting ratio"
+echo "Deleting ratio..."
 sudo rm /usr/bin/ratio
+
+echo "Deleting fuzzPatternCreate..."
+sudo rm /usr/bin/fuzzPatternCreate
+
+echo "Deleting fuzzPatternSearch..."
+sudo rm /usr/bin/fuzzPatternSearch
