@@ -11,6 +11,8 @@ import (
 
 func main() {
    patternPointer:= kingpin.Arg("search", "Hex(eg '0x42424242') or String to be search").Required().String()
+   littleEndianPointer:= kingpin.Flag("little-endian", "Assumes the string to be little endian (default)").Default("true").Bool()
+   bigEndianPointer:= kingpin.Flag("big-endian", "Assumes the string to be big endian").Default("false").Bool()
    pattLengthPointer:= kingpin.Flag("length", "Pattern length").Short(rune('l')).Int()
    kingpin.Parse()
 
@@ -23,12 +25,14 @@ func main() {
    charsetSmall := "abcdefgjijklmnopqrustuvwxyz"
    charsetNum := "0123456789"
    pattLength := *pattLengthPointer
+   littleEndian := *littleEndianPointer
+   bigEndian := *bigEndianPointer
    finalPos := 0
    var startPos int
 
    if len(*patternPointer)<4 {
       fmt.Println("Input must have at least 4 bytes")
-      os.Exit(0)
+      os.Exit(1)
    }
 
    if (*patternPointer)[:2] == "0x" {
@@ -36,22 +40,33 @@ func main() {
       fmt.Println("Assumed litle endian")
       fullBytes, _ := hex.DecodeString((*patternPointer)[2:])
       fullPattern = string(fullBytes)
-      fullPattern = strReverse(fullPattern)
    } else  {
       fullPattern = *patternPointer
    }
 
    if len(fullPattern)<4 {
       fmt.Println("Input must have at least 4 bytes")
-      os.Exit(0)
+      os.Exit(1)
+   }
+
+   //change if little endian
+   if !bigEndian && littleEndian {
+      fullPattern = strReverse(fullPattern)
    }
 
    pattern = fullPattern[:4]
 
+   //check if combi is valid
+   bigCheck:=0
    for i:=0; i<len(pattern); i++ {
       if strings.Contains(charsetCaps, string(pattern[i])) {
          startPos = i
+         bigCheck+=1
       }
+   }
+   if bigCheck!=1 {
+      fmt.Println("Your pattern is invalid. Please try again...")
+      os.Exit(1)
    }
 
    //find combi
@@ -59,6 +74,14 @@ func main() {
    combiArr[1]=strings.IndexByte(charsetSmall, pattern[(startPos+1)%4])
    combiArr[2]=strings.IndexByte(charsetSmall, pattern[(startPos+2)%4])
    combiArr[3]=strings.IndexByte(charsetNum, pattern[(startPos+3)%4])
+
+   //check if combi is valid
+   for _,i := range combiArr {
+      if i<0 {
+         fmt.Println("Your pattern is invalid. Please try again...")
+         os.Exit(1)
+      }
+   }
 
    finalPos = findPos(combiArr, startPos)
 

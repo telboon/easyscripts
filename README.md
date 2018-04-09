@@ -34,6 +34,3 @@ Author: Samuel Pua (kahkin@gmail.com)
 ## Todos
 - Tab completion
 > Seriously out of my league for now. Easy to way to it seems to be using external library argcomplete. But I prefer not to use external libraries
-- Add no search scenario for fuzzPatternSearch
-> For longer than 4 bytes
-> For really cannot find
