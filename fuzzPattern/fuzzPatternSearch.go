@@ -5,6 +5,7 @@ import (
    "gopkg.in/alecthomas/kingpin.v2"
    "encoding/hex"
    "strings"
+   "bytes"
    "os"
 )
 
@@ -32,8 +33,10 @@ func main() {
 
    if (*patternPointer)[:2] == "0x" {
       fmt.Println("Hex detected")
+      fmt.Println("Assumed litle endian")
       fullBytes, _ := hex.DecodeString((*patternPointer)[2:])
       fullPattern = string(fullBytes)
+      fullPattern = strReverse(fullPattern)
    } else  {
       fullPattern = *patternPointer
    }
@@ -100,4 +103,12 @@ func findPos(combiArr []int, startPos int) int {
    answerLength -= startPos
 
    return answerLength
+}
+
+func strReverse(before string) string {
+   var newBuff bytes.Buffer
+   for i,_ := range before {
+      newBuff.WriteByte(before[len(before)-i-1])
+   }
+   return newBuff.String()
 }
