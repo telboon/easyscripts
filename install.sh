@@ -15,7 +15,7 @@ echo "Installing allieration-gen..."
 sudo cp ./alliteration-gen/bin/alliteration-gen /usr/bin
 
 echo "Installing ratio..."
-sudo cp ./ratio/bin/ratio /usr/bin
+sudo cp ./ratio/ratio /usr/bin
 
 echo "Installing fuzzPatternCreate..."
 sudo cp ./fuzzPattern/fuzzPatternCreate /usr/bin

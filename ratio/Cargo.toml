@@ -1,7 +1,0 @@
-[package]
-name = "ratio"
-version = "0.1.0"
-authors = ["Samuel Pua <kahkin@gmail.com>"]
-
-[dependencies]
-clap = "2.31.2"
