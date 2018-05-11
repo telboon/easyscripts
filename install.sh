@@ -22,3 +22,6 @@ sudo cp ./fuzzPattern/fuzzPatternCreate /usr/bin
 
 echo "Installing fuzzPatternSearch..."
 sudo cp ./fuzzPattern/fuzzPatternSearch /usr/bin
+
+echo "Installing permutateText.py"
+sudo cp ./permutateText/permutateText.py /usr/bin

@@ -22,3 +22,6 @@ sudo rm /usr/bin/fuzzPatternCreate
 
 echo "Deleting fuzzPatternSearch..."
 sudo rm /usr/bin/fuzzPatternSearch
+
+echo "Deleting permutateText.py"
+sudo rm /usr/bin/permutateText.py
