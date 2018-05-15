@@ -33,7 +33,10 @@ else:
         currRead=fileHandles[operator].readline()
 
         if currRead != "":
-            currState[operator]=currRead[:-1]
+            if currRead[-1:]=="\n":
+                currState[operator]=currRead[:-1]
+            else:
+                currState[operator]=currRead
         
             if operator==len(filenames)-1:
                 print(showState(currState))
