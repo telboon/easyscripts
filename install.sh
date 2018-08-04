@@ -1,27 +1,26 @@
 echo "Installing urlencode.py..."
-sudo cp ./urlencode/urlencode.py /usr/bin/
+sudo cp ./urlencode/urlencode.py /usr/local/bin/
 
 echo "Installing urldecode.py..."
-sudo cp ./urldecode/urldecode.py /usr/bin/
+sudo cp ./urldecode/urldecode.py /usr/local/bin/
 
 echo "Installing clearExtraLines.py..."
-sudo cp ./clearExtraLines/clearExtraLines.py /usr/bin/
-cp ./clearExtraLines/clearextralines.desktop ~/Desktop/Clear\ Burp\ Lines.desktop
+sudo cp ./clearExtraLines/clearExtraLines.py /usr/local/bin/
 
 echo "Installing ascii2img..."
-sudo cp ./ascii2img/ascii2img /usr/bin/
+sudo cp ./ascii2img/ascii2img /usr/local/bin/
 
 echo "Installing allieration-gen..."
-sudo cp ./alliteration-gen/bin/alliteration-gen /usr/bin
+sudo cp ./alliteration-gen/bin/alliteration-gen /usr/local/bin
 
 echo "Installing ratio..."
-sudo cp ./ratio/ratio /usr/bin
+sudo cp ./ratio/ratio /usr/local/bin
 
 echo "Installing fuzzPatternCreate..."
-sudo cp ./fuzzPattern/fuzzPatternCreate /usr/bin
+sudo cp ./fuzzPattern/fuzzPatternCreate /usr/local/bin
 
 echo "Installing fuzzPatternSearch..."
-sudo cp ./fuzzPattern/fuzzPatternSearch /usr/bin
+sudo cp ./fuzzPattern/fuzzPatternSearch /usr/local/bin
 
 echo "Installing permutateText.py"
-sudo cp ./permutateText/permutateText.py /usr/bin
+sudo cp ./permutateText/permutateText.py /usr/local/bin
