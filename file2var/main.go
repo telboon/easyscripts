@@ -48,7 +48,7 @@ func convertSanitize(inByte []byte) string {
         } else if inByte[i] > 32 && inByte[i] < 126{
             sb.WriteByte(inByte[i])
         } else {
-            sb.WriteString(fmt.Sprintf("\\x%2x",inByte[i]))
+            sb.WriteString(fmt.Sprintf("\\x%02x",inByte[i]))
         }
         if i%50 ==0 {
             sb.WriteString("\"\nfileVar += \"")
