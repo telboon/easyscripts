@@ -30,6 +30,10 @@ Author: Samuel Pua (kahkin@gmail.com)
 * urldecode.py
      * Decodes url encoding back to ascii
 
+* file2var
+     * Converts a file into Go variable
+     * Useful for embedding a file to a binary
+
 
 ## Todos
 - Tab completion

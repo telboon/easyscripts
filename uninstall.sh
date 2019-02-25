@@ -4,10 +4,6 @@ sudo rm /usr/local/bin/urlencode.py
 echo "Deleting urldecode.py..."
 sudo rm /usr/local/bin/urldecode.py
 
-echo "Deleting clearExtraLines.py..."
-sudo rm /usr/local/bin/clearExtraLines.py
-rm ~/Desktop/Clear\ Burp\ Lines.desktop
-
 echo "Deleting ascii2img.py..."
 sudo rm /usr/local/bin/ascii2img
 
@@ -25,3 +21,6 @@ sudo rm /usr/local/bin/fuzzPatternSearch
 
 echo "Deleting permutateText.py"
 sudo rm /usr/local/bin/permutateText.py
+
+echo "Deleting file2var"
+sudo rm /usr/local/bin/file2var
